@@ -74,6 +74,7 @@ class ModuleMaker:
 # %% ../nbs/02_maker.ipynb 19
 def decor_id(d):
     "`id` attr of decorator, regardless of whether called as function or bare"
+    if isinstance(d, ast.Attribute): return d.attr
     return d.id if hasattr(d, 'id') else nested_attr(d, 'func.id', '')
 
 # %% ../nbs/02_maker.ipynb 20
