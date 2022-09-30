@@ -20,11 +20,14 @@ website:
     contents:
       - auto: "/*.ipynb"
       - section: Tutorials
-        contents: tutorials
+        contents:
+        - tutorials
       - section: Explanations
-        contents: explanations
+        contents:
+        - explanations
       - section: API
-        contents: api
+        contents:
+        - api
   favicon: favicon.png
   navbar:
     background: primary
@@ -56,4 +59,3 @@ website:
         aria-label: Fast.ai Twitter
 
 metadata-files: [nbdev.yml]
-
